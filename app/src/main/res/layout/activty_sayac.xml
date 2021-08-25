@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/golive_icon"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+
+            app:srcCompat="@drawable/golive_logo" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/BarcodeGif"
+                android:layout_width="223dp"
+                android:layout_height="223dp"
+                android:layout_marginBottom="112dp"
+                android:src="@drawable/sayac_gif" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treshold"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/txt_treshold"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGray"
+                android:numeric="integer"
+                android:textAlignment="textEnd"
+                android:textSize="15dp"
+                android:text="0.5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maske genişliği (Width)"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/txt_maskWidth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGray"
+                android:numeric="integer"
+                android:textAlignment="textEnd"
+                android:textSize="15dp"
+                android:text="350"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maske yüksekliği (Height)"
+                android:layout_gravity="center"/>
+            <EditText
+                android:id="@+id/txt_maskHeight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorGray"
+                android:numeric="integer"
+                android:textAlignment="textEnd"
+                android:textSize="15dp"
+                android:text="120"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sayaç Numaralarını Okutun"
+                android:layout_gravity="center"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/buttonsayac"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/custom_button"
+            android:text="┌      ┐\n⃝\n└      ┘"
+            android:textAlignment="center"
+            android:textColor="#80ff00"
+            android:textSize="15dp"
+            android:textStyle="bold"
+/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+</LinearLayout>
