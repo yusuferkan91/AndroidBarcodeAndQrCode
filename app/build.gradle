@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+//    implementation project(":zbar")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libraries.barcodescanner_zbar
+    implementation libraries.support_v4
+    implementation libraries.appcompat_v7
+    implementation libraries.design_support
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.2'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    implementation 'com.github.kenglxn.QRGen:android:2.6.0'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+
+    implementation project(path: ':opencv')
+
+
+}
+
+android {
+    defaultConfig {
+        applicationId "${project.group}.sayac.sample"
+
+    }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src/main/assets', 'src/main/assets/'
+            }
+        }
+    }
+}
